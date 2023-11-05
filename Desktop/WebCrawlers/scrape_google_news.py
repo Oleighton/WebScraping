@@ -1,12 +1,8 @@
-import requests
 from bs4 import BeautifulSoup
-import csv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import csv
 import time
 from datetime import datetime,timedelta
 import pandas as pd
@@ -14,7 +10,8 @@ from textblob import TextBlob
 
 
 # Perform a search on Google News and store the URL
-search_url_Google = "https://www.google.com/search?q=google+stock+news&client=safari&sca_esv=574510585&rls=en&tbm=nws&sxsrf=AM9HkKk0GQD4m2SoX9dmJWw3Xg9OzeTsTQ:1697662506857&source=lnt&tbs=sbd:1&sa=X&ved=2ahUKEwjgtK3VvYCCAxXKJzQIHSU2DA8QpwV6BAgDEBM&biw=1443&bih=858&dpr=1"
+query = "google+stock+news"
+search_url_Google = "https://www.google.com/search?q="+query+"&client=safari&sca_esv=574510585&rls=en&tbm=nws&sxsrf=AM9HkKk0GQD4m2SoX9dmJWw3Xg9OzeTsTQ:1697662506857&source=lnt&tbs=sbd:1&sa=X&ved=2ahUKEwjgtK3VvYCCAxXKJzQIHSU2DA8QpwV6BAgDEBM&biw=1443&bih=858&dpr=1"
 TICKER = 'GOOGL'
 ARTICLE_LIMIT = 20
 SCROLL_PAUSE_TIME = 2

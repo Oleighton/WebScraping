@@ -1,1 +1,0 @@
-# Web crawler that navigates to google chrome news archive, searches for all google news related stock articles, analyzes the polarity of the article title, and saves the article title, date and polarity to a csv file. Easily modified to include any other news articles.

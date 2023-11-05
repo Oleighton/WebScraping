@@ -9,7 +9,7 @@ import pandas as pd
 from textblob import TextBlob
 
 
-# Perform a search on Google News and store the URL
+# Perform a search on Google News for google stock news related articles and store the URL
 query = "google+stock+news"
 search_url_Google = "https://www.google.com/search?q="+query+"&client=safari&sca_esv=574510585&rls=en&tbm=nws&sxsrf=AM9HkKk0GQD4m2SoX9dmJWw3Xg9OzeTsTQ:1697662506857&source=lnt&tbs=sbd:1&sa=X&ved=2ahUKEwjgtK3VvYCCAxXKJzQIHSU2DA8QpwV6BAgDEBM&biw=1443&bih=858&dpr=1"
 TICKER = 'GOOGL'
